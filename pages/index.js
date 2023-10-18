@@ -16,7 +16,7 @@ export default function Home() {
             Wolverine Radar
           </h1>
 
-          <p className="text-lg leading-8 py-6">
+          <p className="text-lg leading-8 py-6 text-white_txt">
             See the World with New Clarity.
           </p>
           <div className="mt-4 py-8 flex items-center justify-center gap-x-6 bg-primary_white">
@@ -26,7 +26,7 @@ export default function Home() {
             >
               Get started
             </Link>
-            <Link href='#radar' className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href='#radar' className="text-sm font-semibold leading-6 text-white_txt">
               Learn more <span aria-hidden="true">→</span>
             </Link>
           </div>
