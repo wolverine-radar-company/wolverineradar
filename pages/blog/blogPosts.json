@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "What is Radarography?",
+    "content": "If, upon seeing the name of this website, quickly ran a google search on the word “radarography” I suspect you are not alone.  Yes, the word is made up, and, yes, it does sound confusing similar to radiography that is something completely different to the subject matter contained on this website.  All of that said, our team is very proud of the unique radar image formation workflow we have out together that drives this site.  So much so, we believe that it warrants the invention of a new word to describe the data experience that our capability unlocks.  This purpose of this website is to allow users to look back in time at the changing geography of our planet through the lens of a very powerful and proficient radar satellites, the Copernicus Sentinel mission.  While there are many tools already in existence to visualize Sentinel collections, our goal was to make Sentinel data accessible to the average web-surfer looking to gain a few insights on geographic places that are important to them.",
+    "date": "2023-06-01",
+    "imgSrc": "/images/MEBDABS_vd.jpg",
+    "author": "The Wolverine Radar Team"
+  },
+  {
+    "id": 2,
+    "title": "4.44 Billion",
+    "content": "Since the start of the Sentinel 1 mission, the satellites have collected a total of 4.44 billion “scenes” as we describe them in our platform.  That's right.  4.44 billion opportunities to put a pretty graphic at the top of a blog post and then let the words trickle down beneath it.  The Sentinel 1 SAR constellation was designed to collect every square kilometer of the Earth's land mass every 12 days.  Typical commercial SAR imagery collections are somewhere between 25 km2 to 250 km2 a scene, depending on the desired product resolution.  By processing Sentinel 1 phase histories as though they were typical commercial products (10km x 20km) we can create the equivalent of 4.44 billion historical high-quality snapshots documenting the history of our planet going all the way back to 2014.",
+    "date": "2023-06-01",
+    "imgSrc": "/images/ASSEOUL_vd.jpg",
+    "author": "The Wolverine Radar Team"
+  },
+  {
+    "id": 3,
+    "title": "Pricing our Product",
+    "content": "While there may be a few readers of this blog who are unfamiliar with the economics of radar satellites, those in the know are well aware that Sentinel imagery is distributed at no charge to users with valid login credentials to a large number of distribution sites.  Knowledge of this fact might cause one to wonder why this website ever imagines to sell data at 10 cents a km2 if we are competing with something you don't have to pay for.  The answer to that question lies in the value proposition for our company core technology.  The images that come out of our processor when compared side-by-side with comparable free offerings, are significantly better suited to the type of fine feature analysis that most situational awareness tasks require.  In short, typical Sentinel 1 users are interested in very large area environmental changes.",
+    "date": "2023-06-04",
+    "imgSrc": "/images/AFDNGTE_vd.jpg",
+    "author": "The Wolverine Radar Team"
+  },
+  {
+    "id": 4,
+    "title": "Dangote or Bust",
+    "content": "In this weeks edition of the Economist, the story “Flipping the Markets” discussed the expected impact that the opening of Africa's newest oil refinery will have on the global economy.  The radarography image depicted above is one of over 500 snapshots that the Sentinel 1 satellite has captured of the site since construction began in 2017.",
+    "date": "2023-06-04",
+    "imgSrc": "/images/NANWYRK_vd.jpg",
+    "author": "The Wolverine Radar Team"
+  }
+]

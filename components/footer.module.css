@@ -1,0 +1,4 @@
+.gradient-div {
+    background: rgb(4,4,52);
+    background: linear-gradient(90deg, rgba(4,4,52,1) 6%, rgba(0,0,224,1) 82%);
+}
