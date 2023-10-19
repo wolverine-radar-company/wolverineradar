@@ -72,12 +72,12 @@ export default function Navbar() {
         <nav className="md:hidden font-extrabold bg-black w-full">
           <ul className="px-20 flex-col items-center text-right gap-6 text-sm">
             <li className='py-5 underline'>
-              <Link href="/about" className="text-gray-500 transition hover:text-gray-500/75">
+              <Link href="/about" className="text-gray-500 transition hover:text-gray-500/75" onClick={() => setIsMobileMenuOpen(false)}>
                 About
               </Link>
             </li>
             <li className='py-5 underline'>
-              <Link href="/blog" className="text-gray-500 transition hover:text-gray-500/75">
+              <Link href="/blog" className="text-gray-500 transition hover:text-gray-500/75" onClick={() => setIsMobileMenuOpen(false)}>
                 Blog
               </Link>
             </li>
