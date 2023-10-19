@@ -57,6 +57,7 @@ export default function Home() {
         builders get to orbit faster and derive more value from fixed assets once they get there.
         </p>
         <Image src={"/images/MEBDABS_vd.jpg"} width={608} height={300} className='mx-auto mt-10' />
+        <p className='-mt-6 text-white_txt text-left ml-4 md:ml-10 text-[8px]'>Contains modified Copernicus Sentinel data 2023</p>
       </div>
     </div>
   </div>
@@ -91,6 +92,7 @@ export default function Home() {
         our processing software, and all of our information extraction analytics.
         </p>
         <Image src={"/images/earth.png"} width={664} height={350} className='mx-auto mt-10' />
+        <p className='-mt-6 text-white_txt text-left ml-4 md:ml-10 text-[8px]'>Rendered in Google Earth Pro</p>
       </div>
     </div>
   </div>
@@ -108,7 +110,9 @@ export default function Home() {
         and investors can understand the design trades they are making before commencing the manufacturing 
         process.
         </p>
-        <Image src={"/images/satellite.jpeg"} width={608} height={300} className='mx-auto mt-10' />
+        <div className='bg-gray-300'>
+        <Image src={"/images/radarography.png"} width={608} height={300} className='mx-auto mt-10' style={{ backgroundColor: 'gray' }}/>
+        </div>
         <p className='mt-5 text-left text-black'>Whether your organization is planning its first satellite or trying to maintain a fleet of a dozen vehicles, reach out at info@wolverineradar.com to let us help create value for all current and future on-orbit assets.</p>
       </div>
     </div>

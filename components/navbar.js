@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header id='navbar' className="bg-primary_white p-4 color-primary font-extrabold text-white_txt fixed w-full top-0 z-10">
+    <header id='navbar' className={`bg-primary_white p-4 color-primary font-extrabold text-white_txt fixed w-full top-0 z-10 ${isMobileMenuOpen ? 'bg-black' : 'bg-primary_white'}`}>
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-8 lg:px-10">
         <Link className="flex items-center" href="/">
           <Image
@@ -40,8 +40,8 @@ export default function Navbar() {
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
               <li>
-                <Link href="/team" className="text-gray-500 transition hover:text-gray-500/75">
-                  Team
+                <Link href="/about" className="text-gray-500 transition hover:text-gray-500/75">
+                  About
                 </Link>
               </li>
               <li>
@@ -69,11 +69,11 @@ export default function Navbar() {
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden font-extrabold">
+        <nav className="md:hidden font-extrabold bg-black w-full">
           <ul className="px-20 flex-col items-center text-right gap-6 text-sm">
             <li className='py-5 underline'>
-              <Link href="/team" className="text-gray-500 transition hover:text-gray-500/75">
-                Team
+              <Link href="/about" className="text-gray-500 transition hover:text-gray-500/75">
+                About
               </Link>
             </li>
             <li className='py-5 underline'>

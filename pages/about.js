@@ -50,7 +50,7 @@ const people = [
                 in 2021 to provide the next generation of Michigan Engineers an opportunity to create new applications 
                 for Synthetic Aperture Radar data and the satellites that collect it.
                 </p>
-                <ul role="list" className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 text-white_txt">
+                {/* <ul role="list" className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 text-white_txt">
                 {people.map((person) => (
                     <li key={person.name}>
                     <div className="flex items-center gap-x-6">
@@ -68,7 +68,7 @@ const people = [
                     </div>
                     </li>
                 ))}
-                </ul>
+                </ul> */}
              
                 </div>
             </div>

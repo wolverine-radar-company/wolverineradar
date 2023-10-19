@@ -11,7 +11,7 @@ import blogPostsData from '../blog/blogPosts.current.json'; // Import your blog 
   export default function Blog() {
     const [blogPosts, setBlogPosts] = useState(blogPostsData); // Use your blog posts data
     return (
-            <div className="bg-primary_white py-6 sm:py-8 mt-20">
+            <div className="bg-black py-6 sm:py-8 mt-20">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-logo_blue">From the blog</h2>

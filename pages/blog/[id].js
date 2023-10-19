@@ -7,7 +7,7 @@ const BlogDetails = ({blog, notFound}) => {
 
   if (notFound)  {
     return (
-        <div className="p-3 mt-20">
+        <div className="p-3 mt-20 bg-black">
             <section className="p-3">
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8  border-4 rounded-lg">
                 <div className="max-w-3xl">

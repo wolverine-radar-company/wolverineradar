@@ -1,34 +1,18 @@
 [
   {
-    "id": 1,
-    "title": "What is Radarography?",
-    "content": "If, upon seeing the name of this website, quickly ran a google search on the word “radarography” I suspect you are not alone.  Yes, the word is made up, and, yes, it does sound confusing similar to radiography that is something completely different to the subject matter contained on this website.  All of that said, our team is very proud of the unique radar image formation workflow we have out together that drives this site.  So much so, we believe that it warrants the invention of a new word to describe the data experience that our capability unlocks.  This purpose of this website is to allow users to look back in time at the changing geography of our planet through the lens of a very powerful and proficient radar satellites, the Copernicus Sentinel mission.  While there are many tools already in existence to visualize Sentinel collections, our goal was to make Sentinel data accessible to the average web-surfer looking to gain a few insights on geographic places that are important to them.",
-    "date": "2023-06-01",
+    "id": 2,
+    "title": "Designing For Analytics",
+    "content": "Traditionally, SAR satellite designers employ hard fast rules as to what pulse-repetition-frequency is required for a non-ambiguous imaging swath.  Did the previous sentence contain multiple words that you have never heard before in your life?  This blog post is probably not for you.  For the SAR nerds out there, you know exactly what I mean.  Not all scene content creates ambiguous energy equally.  The noise floor requirements for an open-ocean ship detection collection are wildly different from a collection attempting to measure the shadow signature and layover of a large oak tree.  Most tasking software treats these collection scenarios the same.  A vertically integrated satellite and analytics provider could create specialized tasking modes for each measurement mode, but they would incur the headcount increase associated with recruiting and sustaining a team of highly specialized signal processing engineers for an un-tested market opportunity.  As a result, most builders just release a “modes” sheet specifying the sets of nominal resolutions that their spacecraft supports as the default “product list”.",
+    "date": "2023-09-25",
     "imgSrc": "/images/MEBDABS_vd.jpg",
     "author": "The Wolverine Radar Team"
   },
   {
-    "id": 2,
-    "title": "4.44 Billion",
-    "content": "Since the start of the Sentinel 1 mission, the satellites have collected a total of 4.44 billion “scenes” as we describe them in our platform.  That's right.  4.44 billion opportunities to put a pretty graphic at the top of a blog post and then let the words trickle down beneath it.  The Sentinel 1 SAR constellation was designed to collect every square kilometer of the Earth's land mass every 12 days.  Typical commercial SAR imagery collections are somewhere between 25 km2 to 250 km2 a scene, depending on the desired product resolution.  By processing Sentinel 1 phase histories as though they were typical commercial products (10km x 20km) we can create the equivalent of 4.44 billion historical high-quality snapshots documenting the history of our planet going all the way back to 2014.",
-    "date": "2023-06-01",
-    "imgSrc": "/images/ASSEOUL_vd.jpg",
-    "author": "The Wolverine Radar Team"
-  },
-  {
-    "id": 3,
-    "title": "Pricing our Product",
-    "content": "While there may be a few readers of this blog who are unfamiliar with the economics of radar satellites, those in the know are well aware that Sentinel imagery is distributed at no charge to users with valid login credentials to a large number of distribution sites.  Knowledge of this fact might cause one to wonder why this website ever imagines to sell data at 10 cents a km2 if we are competing with something you don't have to pay for.  The answer to that question lies in the value proposition for our company core technology.  The images that come out of our processor when compared side-by-side with comparable free offerings, are significantly better suited to the type of fine feature analysis that most situational awareness tasks require.  In short, typical Sentinel 1 users are interested in very large area environmental changes.",
-    "date": "2023-06-04",
-    "imgSrc": "/images/AFDNGTE_vd.jpg",
-    "author": "The Wolverine Radar Team"
-  },
-  {
-    "id": 4,
-    "title": "Dangote or Bust",
-    "content": "In this weeks edition of the Economist, the story “Flipping the Markets” discussed the expected impact that the opening of Africa's newest oil refinery will have on the global economy.  The radarography image depicted above is one of over 500 snapshots that the Sentinel 1 satellite has captured of the site since construction began in 2017.",
-    "date": "2023-06-04",
-    "imgSrc": "/images/NANWYRK_vd.jpg",
+    "id": 1,
+    "title": "Two Websites, One Mission",
+    "content": "Wolverine Radar was founded in 2021 with the purpose of supporting the next generation of SAR satellite builders by building tools to get them on orbit more quickly and capitalize financially for staying on orbit for longer. A critical component to both of these missions is creating a reliable commercial marketplace for the satellites that successfully make it to orbit. The Wolverine Radar processing technology creates best-in-class scalable display and measurement capabilities for SAR data that increase the value of collections. In many cases, our customized processing reveals insights in the data that are not visible to the naked eye through traditionally processed workflows. By creating sensor collection models specifically tuned to analytics outputs, the Wolverine Radar system can unlock quantifiable value that has previously been left unrealized. The first step to unlock this value was to demonstrate the commercial potential of this processing when applied to ubiquitous free Sentinel 1 SAR data. The portal to access these products is a stand-alone capability called radarography.com. The purpose of keeping the Wolverine Radar brand separate from the analytics outputs, is we firmly believe Sentinel 1 is just a starting point for the SAR revolution and that higher revisits and lower cost per km2 will ultimately transform SAR satellites from a niche technology into something as foundational to the global economy as GPS or the internet. We want to be a part of that transformation and we believe the capabilities that we have created to design that next generation of satellite will bring that future into the present.",
+    "date": "2023-09-13",
+    "imgSrc": "/images/MEBDABS_vd.jpg",
     "author": "The Wolverine Radar Team"
   }
 ]
