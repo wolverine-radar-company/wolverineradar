@@ -9,7 +9,7 @@ export default function Navbar() {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
       if (navbar) {
-        if (window.scrollY > 80) {
+        if (window.scrollY > 25) {
           navbar.classList.add('bg-black');
         } else {
           navbar.classList.remove('bg-black');
