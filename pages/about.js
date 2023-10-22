@@ -38,8 +38,14 @@ const people = [
 
   
   export default function Team() {
+    const navbar = document.getElementById('navbar');
+    if (navbar) 
+    {
+        navbar.classList.add('bg-black');
+    } 
+    
     return (
-            <div className="mt-20 bg-primary_white py-6 sm:py-8">
+            <div className="mt-20 bg-primary_white py-6 sm:py-8 bg-black">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-logo_blue">Meet our team</h2>
