@@ -5,26 +5,26 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.getElementById('navbar');
-      if (navbar) {
-        if (window.scrollY > 25) {
-          navbar.classList.add('bg-black');
-        } else {
-          navbar.classList.remove('bg-black');
-        }
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const navbar = document.getElementById('navbar');
+  //     if (navbar) {
+  //       if (window.scrollY > 25) {
+  //         navbar.classList.add('bg-black');
+  //       } else {
+  //         navbar.classList.remove('bg-black');
+  //       }
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
-    <header id='navbar' className={`bg-primary_white p-4 color-primary font-extrabold text-white_txt fixed w-full top-0 z-10 ${isMobileMenuOpen ? 'bg-black' : 'bg-primary_white'}`}>
+    <header id='navbar' className={`bg-black p-4 color-primary font-extrabold text-white_txt fixed w-full top-0 z-10 ${isMobileMenuOpen ? 'bg-black' : 'bg-primary_white'}`}>
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-8 lg:px-10">
         <Link className="flex items-center" href="/">
           <Image
