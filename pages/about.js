@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image'
-import { useState } from 'react'; // Import useState
+import { useState, useEffect } from 'react'; // Import useState
 import * as React from 'react'
 
 const people = [
@@ -38,12 +38,13 @@ const people = [
 
   
   export default function Team() {
-    const navbar = document.getElementById('navbar');
-    if (navbar) 
-    {
-        navbar.classList.add('bg-black');
-    } 
-    
+    useEffect(() => {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+          navbar.classList.add('bg-black');
+      }
+    }, []);
+      
     return (
             <div className="mt-20 bg-primary_white py-6 sm:py-8 bg-black">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
