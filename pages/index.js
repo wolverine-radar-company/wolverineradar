@@ -12,7 +12,7 @@ export default function Home() {
     <div className="mx-auto max-w-3xl py-28 sm:py-44 lg:py-52 p-6">
       <div className="text-center">
         <div className="text-left h-full">
-          <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-6xl text-txt mb-0">
+          <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-6xl text-txt mb-0 pt-20">
             Wolverine Radar
           </h1>
 
