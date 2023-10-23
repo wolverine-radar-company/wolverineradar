@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     colors: {
-      logo_blue: '#4F8ABE', /** blue */
+      logo_blue: '#4F71BE', /** blue */
       white_txt: "#ffffff", /** white */
       black: '#000000',
       ghostwhite: 'ghostwhite',
