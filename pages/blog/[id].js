@@ -98,7 +98,7 @@ const BlogDetails = ({blog, notFound}) => {
   );
 };
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { query } = context;
   const { id } = query;
   const blog = blogPostsData.find((post) => post.id === parseInt(id));
