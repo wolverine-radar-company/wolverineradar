@@ -8,6 +8,7 @@ module.exports = {
   output: 'standalone',
   images: {
     domains: ['media.licdn.com', 'wolverineradar.com', 'radarography.com', 'localhost'],
+    unoptimized: true,
   },
   reactStrictMode: false,
   webpack: true,
