@@ -5,9 +5,11 @@ const nextConfig = {
 
 module.exports = nextConfig
 module.exports = {
-  output: 'standalone',
+  output: 'export',
+  distDir: 'dist',
   images: {
     domains: ['media.licdn.com', 'wolverineradar.com', 'radarography.com', 'localhost'],
+    unoptimized: true,
   },
   reactStrictMode: false,
   webpack: true,
