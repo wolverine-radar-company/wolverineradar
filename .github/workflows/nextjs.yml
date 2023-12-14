@@ -79,13 +79,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Check directory structure
         run: |
-          ls -la  # List files in the current directory
-          ls -la ../  # List files in the 'out' directory
           pwd
+          ls -la  # List files in the current directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: /home/runner/work/wolverineradar/wolverineradar/out
+          path: out
 
 
   # Deployment job
