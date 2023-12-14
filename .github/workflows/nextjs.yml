@@ -79,7 +79,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Check directory structure
         run: |
-          ls -l  # List files in the current directory
+          ls -la  # List files in the current directory
           ls -l ./out  # List files in the 'out' directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
