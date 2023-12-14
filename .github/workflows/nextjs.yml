@@ -81,10 +81,11 @@ jobs:
         run: |
           pwd
           ls -la  # List files in the current directory
+          ls -la ../
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: out
+          path: ../out
 
 
   # Deployment job
