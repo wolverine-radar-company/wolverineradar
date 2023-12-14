@@ -81,6 +81,11 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./out
+      - name: Check directory structure
+        run: |
+          ls -l  # List files in the current directory
+          ls -l ./out  # List files in the 'out' directory
+
 
   # Deployment job
   deploy:
