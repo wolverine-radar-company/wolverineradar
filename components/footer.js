@@ -8,7 +8,7 @@ function Footer() {
             <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 lg:px-8">
                 <div className="flex justify-center text-teal-600">
                 <Image
-                    src="/Blue_Icon_Transparent.PNG"
+                    src="/wolverineradar/Blue_Icon_Transparent.PNG"
                     width={30}
                     height={35}
                     alt="Logo"
