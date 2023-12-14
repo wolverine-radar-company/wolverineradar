@@ -80,11 +80,11 @@ jobs:
       - name: Check directory structure
         run: |
           ls -la  # List files in the current directory
-          ls -l ./out  # List files in the 'out' directory
+          ls -la dist  # List files in the 'out' directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: ./next
 
 
   # Deployment job
