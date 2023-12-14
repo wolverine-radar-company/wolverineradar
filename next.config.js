@@ -10,6 +10,7 @@ module.exports = {
     domains: ['media.licdn.com', 'wolverineradar.com', 'radarography.com', 'localhost'],
     unoptimized: true,
   },
+  basePath: "/wolverineradar", assetPrefix:"/wolverineradar",
   reactStrictMode: false,
   webpack: true,
   webpack: (config) => {
