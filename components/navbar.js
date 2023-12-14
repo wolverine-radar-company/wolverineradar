@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-8 lg:px-10">
         <Link className="flex items-center" href="/">
           <Image
-            src="../Blue_Icon_Transparent.PNG"
+            src="wolverineradar/Blue_Icon_Transparent.PNG"
             width={30}
             height={35}
             alt="Logo"
