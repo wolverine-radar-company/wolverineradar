@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
   <main className={`bg-ghostwhite ${styles['no-scrollbar']}`}>
-   <div className="h-[90vh] w-screen bg-cover bg-center relative" style={{ backgroundImage: `url('/images/MEBDABS_vd.jpg')` }}>
+   <div className="h-[90vh] w-screen bg-cover bg-center relative" style={{ backgroundImage: `url('../images/MEBDABS_vd.jpg')` }}>
     <div className="mx-auto max-w-3xl py-28 sm:py-44 lg:py-52 p-6">
       <div className="text-center">
         <div className="text-left h-full">
@@ -56,7 +56,7 @@ export default function Home() {
         a suite of off-the-shelf system modeling, tasking and processing tools to help satellite 
         builders get to orbit faster and derive more value from fixed assets once they get there.
         </p>
-        <Image src={"/images/MEBDABS_vd.jpg"} width={608} height={300} className='mx-auto mt-10' />
+        <Image src={"../images/MEBDABS_vd.jpg"} width={608} height={300} className='mx-auto mt-10' />
         <p className='-mt-6 text-white_txt text-left ml-4 md:ml-10 text-[8px]'>Contains modified Copernicus Sentinel data 2023</p>
       </div>
     </div>
@@ -74,7 +74,7 @@ export default function Home() {
         our highly-optimized tools enable newspace startups to
         focus on their innovative market edge while maximizing their runway.
         </p>
-        <Image src={"/images/satellite.jpeg"} width={608} height={300} className='mx-auto mt-10' />
+        <Image src={"../images/satellite.jpeg"} width={608} height={300} className='mx-auto mt-10' />
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@ export default function Home() {
         jobs to complete.  Crosshatch serves as computational backbone of our tasking software, 
         our processing software, and all of our information extraction analytics.
         </p>
-        <Image src={"/images/earth.png"} width={664} height={350} className='mx-auto mt-10' />
+        <Image src={"../images/earth.png"} width={664} height={350} className='mx-auto mt-10' />
         <p className='-mt-6 text-white_txt text-left ml-4 md:ml-10 text-[8px]'>Rendered in Google Earth Pro</p>
       </div>
     </div>
@@ -111,7 +111,7 @@ export default function Home() {
         process.
         </p>
         <div className='bg-gray-300'>
-        <Image src={"/images/radarography.png"} width={608} height={300} className='mx-auto mt-10' style={{ backgroundColor: 'gray' }}/>
+        <Image src={"../images/radarography.png"} width={608} height={300} className='mx-auto mt-10' style={{ backgroundColor: 'gray' }}/>
         </div>
         <p className='mt-5 text-left text-black'>Whether your organization is planning its first satellite or trying to maintain a fleet of a dozen vehicles, reach out at info@wolverineradar.com to let us help create value for all current and future on-orbit assets.</p>
       </div>
