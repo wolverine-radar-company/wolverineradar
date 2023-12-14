@@ -81,11 +81,11 @@ jobs:
         run: |
           ls -la  # List files in the current directory
           ls -la ../  # List files in the 'out' directory
-          tree ..
+          pwd
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: /home/runner/work/wolverineradar/wolverineradar/out
 
 
   # Deployment job
