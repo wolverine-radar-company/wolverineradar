@@ -1,18 +1,10 @@
 [
     {
-      "id": 2,
+      "id": 1,
       "title": "Designing For Analytics",
       "content": "Traditionally, SAR satellite designers employ hard fast rules as to what pulse-repetition-frequency is required for a non-ambiguous imaging swath.  Did the previous sentence contain multiple words that you have never heard before in your life?  This blog post is probably not for you.  For the SAR nerds out there, you know exactly what I mean.  Not all scene content creates ambiguous energy equally.  The noise floor requirements for an open-ocean ship detection collection are wildly different from a collection attempting to measure the shadow signature and layover of a large oak tree.  Most tasking software treats these collection scenarios the same.  A vertically integrated satellite and analytics provider could create specialized tasking modes for each measurement mode, but they would incur the headcount increase associated with recruiting and sustaining a team of highly specialized signal processing engineers for an un-tested market opportunity.  As a result, most builders just release a “modes” sheet specifying the sets of nominal resolutions that their spacecraft supports as the default “product list”.",
       "date": "2023-09-25",
       "imgSrc": "../images/boston.jpg",
-      "author": "The Wolverine Radar Team"
-    },
-    {
-      "id": 1,
-      "title": "Two Websites, One Mission",
-      "content": "Wolverine Radar was founded in 2021 with the purpose of supporting the next generation of SAR satellite builders by building tools to get them on orbit more quickly and capitalize financially for staying on orbit for longer. A critical component to both of these missions is creating a reliable commercial marketplace for the satellites that successfully make it to orbit. The Wolverine Radar processing technology creates best-in-class scalable display and measurement capabilities for SAR data that increase the value of collections. In many cases, our customized processing reveals insights in the data that are not visible to the naked eye through traditionally processed workflows. By creating sensor collection models specifically tuned to analytics outputs, the Wolverine Radar system can unlock quantifiable value that has previously been left unrealized. The first step to unlock this value was to demonstrate the commercial potential of this processing when applied to ubiquitous free Sentinel 1 SAR data. The portal to access these products is a stand-alone capability called radarography.com. The purpose of keeping the Wolverine Radar brand separate from the analytics outputs, is we firmly believe Sentinel 1 is just a starting point for the SAR revolution and that higher revisits and lower cost per km2 will ultimately transform SAR satellites from a niche technology into something as foundational to the global economy as GPS or the internet. We want to be a part of that transformation and we believe the capabilities that we have created to design that next generation of satellite will bring that future into the present.",
-      "date": "2023-09-13",
-      "imgSrc": "../images/dubai.jpg",
       "author": "The Wolverine Radar Team"
     }
   ]
