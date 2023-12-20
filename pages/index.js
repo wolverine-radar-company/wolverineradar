@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
   <main className={`bg-ghostwhite ${styles['no-scrollbar']}`}>
-   <div className="h-[90vh] w-screen bg-cover bg-center relative" style={{ backgroundImage: `url('/wolverineradar/images/MEBDABS_vd.jpg')` }}>
+   <div className="h-[90vh] w-screen bg-cover bg-center relative" style={{ backgroundImage: `url('/wolverineradar/images/washtington_dc.jpg')` }}>
     <div className="mx-auto max-w-3xl py-28 sm:py-44 lg:py-52 p-6">
       <div className="text-center">
         <div className="text-left h-full">
