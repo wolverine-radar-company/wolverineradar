@@ -1,15 +1,16 @@
-import React, { PropsWithChildren } from "react";
-import Navbar from '/components/navbar'
-import Footer from '/components/footer'
+// components/layout.js
 
+import Navbar from './navbar';
+import Footer from './footer';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      {children}
-      <Footer/>
-    </>
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </div>
   );
 };
+
 export default Layout;
