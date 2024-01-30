@@ -19,17 +19,7 @@ export default function Home() {
           <p className="text-lg leading-8 py-6 text-white_txt">
             See the World with New Clarity.
           </p>
-          <div className="mt-4 py-8 flex items-center justify-center gap-x-6 bg-primary_white">
-            // <Link
-            //   href="/products"
-            //   className=" text-black rounded-md bg-secondary px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            // >
-            //   Get started
-            // </Link>
-            // <Link href='#radar' className="text-sm font-semibold leading-6 text-white_txt">
-            //   Learn more <span aria-hidden="true">→</span>
-            // </Link>
-          </div>
+
         </div>
       </div>
     </div>
