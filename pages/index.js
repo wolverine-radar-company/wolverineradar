@@ -73,7 +73,7 @@ export default function Home() {
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:text-center">
         <p className="text-3xl font-bold tracking-tight sm:text-4xl text-logo_blue">
-          Our Proccess
+          Our Process
         </p>
         <p className="mt-6 text-lg leading-8 text-black">
         Our foundational Crosshatch python CPU/GPU processing architecture ensures that 
