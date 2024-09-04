@@ -1,0 +1,27 @@
+#
+# (c)2024 Wolverine Radar Company. All rights reserved.
+#
+
+services:
+
+  webapp:
+    container_name: webapp
+    build:
+      context: ./web
+      dockerfile: ./Dockerfile.local
+    env_file: ./.env
+    ports:
+      - "80:80"
+    environment:
+      - PORT=80
+      - DB_HOST=localhost
+      - DB_PORT=3306
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    restart: unless-stopped
+
+
+#
+# (c)2024 Wolverine Radar Company. All rights reserved.
+#

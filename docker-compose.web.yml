@@ -1,0 +1,41 @@
+#
+# (c)2024 Wolverine Radar Company. All rights reserved.
+#
+
+services:
+
+  webapp:
+    container_name: chickadee-web
+    image: web_image
+    # env_file: ./.env
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/ec2-user/Technology/data:/data
+    # environment:
+    #   - PORT=3000
+    #   - DB_HOST=db
+    #   - DB_PORT=3306
+    #   - DB_USER=${DB_USER}
+    #   - DB_PASSWORD=${DB_PASSWORD}
+    #   - DB_NAME=${DB_NAME}
+    restart: unless-stopped
+
+  nginx:
+    container_name: nginx
+    volumes:
+      - ./server/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./server/nginx/radarography.com.conf:/etc/nginx/sites-enabled/radarography.com.conf
+      - ./server/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ../certbot/conf:/etc/letsencrypt
+      - ../certbot/www:/var/www/certbot
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - webapp
+
+
+#
+# (c)2024 Wolverine Radar Company. All rights reserved.
+#

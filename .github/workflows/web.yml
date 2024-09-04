@@ -1,0 +1,54 @@
+name: Deploy Web Application
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  CI-CD:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+        ref: develop
+
+    - name: Create .env.production file
+      run: |
+        echo "AUTH0_SECRET=${{ secrets.AUTH0_SECRET }}" > ./web/.env.production
+        echo "AUTH0_BASE_URL=${{ secrets.AUTH0_BASE_URL }}" >> ./web/.env.production
+        echo "AUTH0_ISSUER_BASE_URL=${{ secrets.AUTH0_ISSUER_BASE_URL }}" >> ./web/.env.production
+        echo "AUTH0_CLIENT_ID=${{ secrets.AUTH0_CLIENT_ID }}" >> ./web/.env.production
+        echo "AUTH0_CLIENT_SECRET=${{ secrets.AUTH0_CLIENT_SECRET }}" >> ./web/.env.production
+        echo "AUTH0_API_CLIENT_ID=${{ secrets.AUTH0_API_CLIENT_ID }}" >> ./web/.env.production
+        echo "AUTHO_API_CLIENT_SECRET=${{ secrets.AUTHO_API_CLIENT_SECRET }}" >> ./web/.env.production
+        echo "AUTH0_API_CLIENT_AUDIENCE=${{ secrets.AUTH0_API_CLIENT_AUDIENCE }}" >> ./web/.env.production
+
+        echo "AUTHORIZE_NET_API_LOGIN_KEY=${{ secrets.AUTHORIZE_NET_API_LOGIN_KEY }}" >> ./web/.env.production
+        echo "AUTHORIZE_NET_TRANSACTION_KEY=${{ secrets.AUTHORIZE_NET_TRANSACTION_KEY }}" >> ./web/.env.production
+
+        echo "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}" >> ./web/.env.production
+
+        echo "NEXT_PUBLIC_CDN_LINK=${{ secrets.NEXT_PUBLIC_CDN_LINK }}" >> ./web/.env.production
+        echo "NEXT_PUBLIC_CDN_BASE=${{ secrets.NEXT_PUBLIC_CDN_BASE }}" >> ./web/.env.production
+        
+    - name: Build Docker Image
+      run: docker build -t web_image ./web
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.CHICKADEE_PEM }}
+    - name: Remove Old Directory
+      run: |
+        ssh -o StrictHostKeyChecking=no ec2-user@ec2-18-191-120-27.us-east-2.compute.amazonaws.com 'rm -rf /home/ec2-user/Technology/prod/chickadee/*'
+    - name: Copy Docker Image and Docker Compose Scripts to EC2
+      run: |
+        docker save web_image > web_image.tar
+        scp -r -o StrictHostKeyChecking=no ./scripts/swap.sh Makefile docker-compose.web.yml docker-compose.yml server web_image.tar ec2-user@ec2-18-191-120-27.us-east-2.compute.amazonaws.com:/home/ec2-user/Technology/prod/chickadee
+    - name: Load/Start/Stop Docker Images
+      run: |
+        ssh -o StrictHostKeyChecking=no ec2-user@ec2-18-191-120-27.us-east-2.compute.amazonaws.com 'cd /home/ec2-user/Technology/prod/chickadee && docker load -i web_image.tar && ./swap.sh'
