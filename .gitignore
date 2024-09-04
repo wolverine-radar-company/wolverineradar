@@ -33,3 +33,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# images
+/public/images/*
+
+# server config
+server.crt
+server.key
+localhost-secure-server.js

@@ -1,10 +1,38 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
+.gradient-div {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(66deg, rgba(63,63,70,1), rgba(0,0,0,1) 100%);
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+.gradient-div-clipped {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(66deg, rgba(63,63,70,1), rgba(0,0,0,1) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
+
+/* .gradient-div-clipped-up {
+    background: rgb(4,4,52);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 6%, rgba(0,0,224,1) 82%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+} */
+
+.standout-txt {
+    text-shadow:
+        0.07em 0 #141012,
+        0 0.07em #141511,
+        -0.07em 0 #1d1111,
+        0 -0.07em #171a17;
+}
+
+/* Default image size for desktop */
+.custom-image {
+    height: 116px;
+    width: 191px;
+  }
+  
+  /* Adjust image size for screens with a maximum width of 640px (typical mobile screens) */
+  @media (max-width: 640px) {
+    .custom-image {
+      height: auto; /* Set the height to auto to maintain the aspect ratio */
+      max-width: 100%; /* Make the image responsive within its container */
+    }
+  }  

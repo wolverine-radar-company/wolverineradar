@@ -5,10 +5,9 @@ const nextConfig = {
 
 module.exports = nextConfig
 module.exports = {
-  output: 'out',
+  output: 'standalone',
   images: {
-    domains: ['media.licdn.com', 'wolverineradar.com', 'radarography.com', 'localhost'],
-    unoptimized: true,
+    domains: ['media.licdn.com', 'wolverineradar.com', 'radarography.com', 'localhost', process.env.NEXT_PUBLIC_CDN_BASE.replace(/^https?:\/\//, ''), 'lh3.googleusercontent.com', 's.gravatar.com'],
   },
   reactStrictMode: false,
   webpack: true,
