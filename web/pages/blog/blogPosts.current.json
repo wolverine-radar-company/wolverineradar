@@ -1,0 +1,11 @@
+[
+    {
+      "id": 1,
+      "title": "Designing For Analytics",
+      "content": "Traditionally, SAR satellite designers employ hard fast rules as to what pulse-repetition-frequency is required for a non-ambiguous imaging swath.  Did the previous sentence contain multiple words that you have never heard before in your life?  This blog post is probably not for you.  For the SAR nerds out there, you know exactly what I mean.  Not all scene content creates ambiguous energy equally.  The noise floor requirements for an open-ocean ship detection collection are wildly different from a collection attempting to measure the shadow signature and layover of a large oak tree.  Most tasking software treats these collection scenarios the same.  A vertically integrated satellite and analytics provider could create specialized tasking modes for each measurement mode, but they would incur the headcount increase associated with recruiting and sustaining a team of highly specialized signal processing engineers for an un-tested market opportunity.  As a result, most builders just release a “modes” sheet specifying the sets of nominal resolutions that their spacecraft supports as the default “product list”.",
+      "date": "2023-09-25",
+      "imgSrc": "/images/blogs/001_designing_for_analytics.png",
+      "author": "The Wolverine Radar Team"
+    }
+  ]
+  
